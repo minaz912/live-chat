@@ -4,6 +4,8 @@ const io = require('socket.io')(http);
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
