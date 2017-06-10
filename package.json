@@ -14,7 +14,8 @@
     "babel-preset-env": "^1.5.2",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
-    "morgan": "^1.8.2"
+    "morgan": "^1.8.2",
+    "socket.io": "^2.0.2"
   },
   "devDependencies": {
     "babel-jest": "^20.0.3",
