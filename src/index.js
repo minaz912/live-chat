@@ -1,7 +1,17 @@
-import express from 'express';
+const app = require('express')();
+const http = require('http').Server(app);
 import morgan from 'morgan';
 
-const app = express();
-app.use(morgan);
+app.use(morgan('dev'));
 
-app.listen(3000);
+app.get('/', (req, res) => {
+  return res.json({
+    data: 'Index'
+  });
+});
+
+
+http.listen(3000, () => {
+  //eslint-disable-next-line no-console
+  console.log('Listening on port 3000');
+});
