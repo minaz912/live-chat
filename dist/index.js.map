@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/index.js"],"names":["app","use","listen"],"mappings":";;AAAA;;;;AACA;;;;;;AAEA,MAAMA,MAAM,wBAAZ;AACAA,IAAIC,GAAJ;;AAEAD,IAAIE,MAAJ,CAAW,IAAX","file":"index.js","sourcesContent":["import express from 'express';\nimport morgan from 'morgan';\n\nconst app = express();\napp.use(morgan);\n\napp.listen(3000);\n"]}
